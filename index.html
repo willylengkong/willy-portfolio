@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Willy - Data Analyst</title>
+  <meta name="description"
+    content="Willy Lengkong — Retail Data Analyst &amp; Automation Specialist at Indomaret Group &amp; UPH. Python-based automated data pipelines, FMCG competitive analytics, and ETL systems.">
+  <meta name="keywords"
+    content="Willy Lengkong, Retail Data Analyst, Automation Specialist, Python ETL, Looker Studio, pandas, openpyxl, Indomaret Group, Universitas Pelita Harapan, Jakarta, Data Engineering">
+  <meta name="author" content="Willy Lengkong">
+  <link rel="canonical" href="https://willylengkong.me">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Willy Lengkong — Retail Data Analyst &amp; Automation Specialist">
+  <meta property="og:description"
+    content="Turning manual retail reporting into 150× faster automated Python pipelines. Merchandising Data Management at Indomaret Group.">
+  <meta property="og:url" content="https://willylengkong.me">
+  <meta property="og:site_name" content="Willy Lengkong · Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Willy Lengkong — Retail Data Analyst &amp; Automation Specialist">
+  <meta name="twitter:description"
+    content="Python-based automated reporting pipelines, SPD/APC/STD retail metrics, and high-performance ETL systems.">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Google Fonts: Geist, Inter Tight, JetBrains Mono, Signature Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@600;700&family=Great+Vibes&family=Geist:wght@400;500;600;700;800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Structured Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Willy Lengkong",
+    "alternateName": "Willy",
+    "jobTitle": "MD Strategic Analyst & Automation Specialist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PT Indomarco Prismatama (Indomaret Group)"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universitas Pelita Harapan"
+    },
+    "knowsAbout": [
+      "Retail Data Analytics",
+      "Python Automation Pipelines",
+      "pandas",
+      "ETL Systems",
+      "SPD APC STD Analysis",
+      "Looker Studio",
+      "Outlook API",
+      "Power Query"
+    ],
+    "sameAs": [
+      "https://linkedin.com/in/willylengkong",
+      "https://github.com/willylengkong",
+      "https://instagram.com/wyyleee__"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader">
+    <div class="preloader-status">
+      <span class="preloader-status-dot"></span>
+      <span>SYSTEM STATUS: INITIALIZING</span>
+    </div>
+
+    <div class="preloader-brand-title">
+      <div class="preloader-title-glow"></div>
+      <span class="preloader-char">Willy</span>
+    </div>
+
+    <div class="preloader-progress-wrap">
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-fill" id="preloaderFill"></div>
+      </div>
+      <div class="preloader-progress-info">
+        <span>DATA PIPELINES &amp; AUTOMATION</span>
+        <span id="preloaderNum">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- Background WebGL 3D Canvas & Ambient Glow -->
+  <canvas id="webgl-canvas"></canvas>
+  <div class="bg-atmosphere"></div>
+
+  <!-- ================= NAVIGATION HEADER ================= -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home" class="brand-wrapper">
+          <div class="brand-icon">
+            <img src="assets/brand-icon.png" alt="Willy Lengkong Brand Icon">
+          </div>
+          <div class="brand-name">Willy Lengkong</div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#contact" class="nav-cta-btn" title="Get in touch with Willy">
+            <span class="nav-cta-dot"></span>
+            <span>Let's Connect</span>
+            <svg class="nav-cta-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="burger-btn" id="burgerBtn" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-cta-btn mobile-cta-full">
+        <span class="nav-cta-dot"></span>
+        <span>Let's Connect</span>
+        <svg class="nav-cta-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION (CENTERED & FOCUSED) ================= -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-wrapper">
+
+        <div class="hero-title-wrap">
+          <h1 class="hero-headline hero-anim" id="heroName">
+            <span class="hero-char" data-char="W">W</span><span class="hero-char" data-char="I">I</span><span
+              class="hero-char" data-char="L">L</span><span class="hero-char" data-char="L">L</span><span
+              class="hero-char" data-char="Y">Y</span>
+          </h1>
+        </div>
+
+        <h2 class="hero-subhead hero-anim">
+          <span class="gradient-text">Data Analyst</span>
+        </h2>
+
+        <p class="hero-narrative hero-anim">
+          I'm Willy, a data analyst focused on turning complex data and repetitive processes into simple, efficient
+          solutions.
+        </p>
+
+        <div class="hero-actions hero-anim">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+
+        <!-- Social Media Strip -->
+        <div class="social-strip hero-anim">
+          <a class="social-link-btn" href="https://linkedin.com/in/willylengkong" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3V8.98zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v6.33h-4v-5.62c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.72h-4V8.98z" />
+            </svg>
+          </a>
+          <a class="social-link-btn" href="https://github.com/willylengkong" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.65.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.19C22 6.58 17.52 2 12 2z" />
+            </svg>
+          </a>
+          <a class="social-link-btn" href="https://instagram.com/wyyleee__" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.3" cy="6.7" r="1" />
+            </svg>
+          </a>
+          <a class="social-link-btn" href="mailto:willylengkongg@gmail.com" aria-label="Email Willy Lengkong">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Interactive Scroll Explore Indicator -->
+        <a href="#projects" class="hero-scroll-indicator hero-anim" aria-label="Scroll to explore projects">
+          <div class="scroll-mouse-pill">
+            <div class="scroll-wheel-dot"></div>
+          </div>
+          <span class="scroll-hint-text">EXPLORE PROJECTS</span>
+          <svg class="scroll-arrow-down" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M7 10l5 5 5-5" />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SELECTED PROJECTS SECTION ================= -->
+  <section id="projects" class="pad-section">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Data Analyst</span>
+        </div>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-lead-subtitle">
+          Every project is presented following the structured analytical framework:
+        </p>
+        <div class="framework-chain">
+          <div class="fw-group">
+            <div class="fw-node fw-problem">
+              <span class="fw-dot"></span>
+              <span>Problem</span>
+            </div>
+            <span class="fw-arrow">→</span>
+            <div class="fw-node fw-solution">
+              <span class="fw-dot"></span>
+              <span>Solution</span>
+            </div>
+          </div>
+          <span class="fw-arrow fw-arrow-bridge">→</span>
+          <div class="fw-group">
+            <div class="fw-node fw-automation">
+              <span class="fw-dot"></span>
+              <span>Automation</span>
+            </div>
+            <span class="fw-arrow">→</span>
+            <div class="fw-node fw-impact">
+              <span class="fw-dot"></span>
+              <span>Business Impact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Case 1: Reporting Automation Sales Perishable -->
+        <div class="project-card reveal-on-scroll">
+          <h3 class="project-title">Reporting Automation Sales Perishable</h3>
+          <div class="psi-stack">
+            <div class="psi-row">
+              <span class="psi-tag problem">Problem</span>
+              <div class="psi-text">Manual VLOOKUP reporting took <strong>15–20 min per sheet across 11+ daily
+                  reports</strong> (165–220 min/day).</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag solution">Solution</span>
+              <div class="psi-text">Built a modular <strong>Python reporting pipeline</strong> with automated
+                validation, formatting, period detection, and Outlook integration.</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag impact">Impact</span>
+              <div class="psi-text">Reduced runtime to <strong>~30 seconds for 11 reports</strong> — <strong>150× faster /
+                  99.3% time saved</strong>.</div>
+            </div>
+          </div>
+          <div class="project-tech-footer">
+            <span class="tech-chip">Looker Studio</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">pandas</span>
+            <span class="tech-chip">openpyxl</span>
+            <span class="tech-chip">Outlook API</span>
+            <span class="tech-chip">Excel</span>
+            <span class="tech-chip">Claude.ai</span>
+            <span class="tech-chip">gemini.ai</span>
+            <span class="tech-chip">ChatGPT</span>
+          </div>
+        </div>
+
+        <!-- Case 2: O!Save vs Indomaret Competitive Analysis -->
+        <div class="project-card reveal-on-scroll">
+          <h3 class="project-title">O!Save vs Indomaret Competitive Analysis</h3>
+          <div class="psi-stack">
+            <div class="psi-row">
+              <span class="psi-tag problem">Problem</span>
+              <div class="psi-text">Needed to measure <strong>O!Save’s impact on Indomaret sales</strong> in nearby
+                competitive areas.</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag solution">Solution</span>
+              <div class="psi-text">Analyzed <strong>75 nearby Indomaret stores across 40 departments</strong> to assess
+                sales performance around O!Save outlets, using <strong>SPD, APC, and STD</strong> metrics.</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag impact">Impact</span>
+              <div class="psi-text">Identified <strong>store- and department-level sales changes</strong>, enabling more
+                targeted strategic adjustments.</div>
+            </div>
+          </div>
+          <div class="project-tech-footer">
+            <span class="tech-chip">Excel</span>
+            <span class="tech-chip">Business Analysis</span>
+            <span class="tech-chip">SPD / APC / STD</span>
+            <span class="tech-chip">Indomaret BI</span>
+            <span class="tech-chip">Claude.ai</span>
+            <span class="tech-chip">gemini.ai</span>
+            <span class="tech-chip">ChatGPT</span>
+          </div>
+        </div>
+
+        <!-- Case 3: CSV Splitter Tool -->
+        <div class="project-card reveal-on-scroll">
+          <h3 class="project-title">CSV Splitter Tool</h3>
+          <div class="psi-stack">
+            <div class="psi-row">
+              <span class="psi-tag problem">Problem</span>
+              <div class="psi-text"><strong>5M+ row CSV files</strong> exceeded Excel’s row limits, making the data
+                difficult to open and analyze.</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag solution">Solution</span>
+              <div class="psi-text">Built a <strong>Python tool to automatically split large CSV files</strong> into
+                multiple Excel-compatible files.</div>
+            </div>
+            <div class="psi-row">
+              <span class="psi-tag impact">Impact</span>
+              <div class="psi-text">Enabled <strong>faster and easier data handling</strong>, eliminating manual file
+                splitting.</div>
+            </div>
+          </div>
+          <div class="project-tech-footer">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">xlsxwriter</span>
+            <span class="tech-chip">CSV</span>
+            <span class="tech-chip">Excel</span>
+            <span class="tech-chip">Looker Studio</span>
+            <span class="tech-chip">Claude.ai</span>
+            <span class="tech-chip">gemini.ai</span>
+            <span class="tech-chip">ChatGPT</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION & SKILLS MATRIX ================= -->
+  <section id="about" class="pad-section about-section">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>About Me</span>
+        </div>
+        <h2>I build systems that make <span class="gradient-text">data work faster</span>.</h2>
+      </div>
+
+      <div class="about-grid-layout">
+
+        <!-- Left: Bio & Profile Photo -->
+        <div class="about-bio-wrap reveal-on-scroll">
+          <div class="photo-card-wrap">
+            <div class="photo-frame">
+              <img src="assets/profile-photo.jpg" alt="Willy Lengkong — Retail Data Analyst">
+              <span class="photo-status-badge" title="Active & Available"></span>
+            </div>
+            <div class="photo-exp-pill">
+              <span>✨ 3+ Years in Data &amp; Retail</span>
+            </div>
+          </div>
+
+          <div class="about-role-card">
+            <span class="dot"></span>
+            <span>MD Strategic Analyst · PT Indomarco Prismatama (Indomaret Group)</span>
+          </div>
+
+          <div class="about-desc">
+            <p>
+              I’m a Strategic Data Analyst with a background in business operations, data analytics, and technology,
+              while currently pursuing my studies in Information Systems at Universitas Pelita Harapan.
+            </p>
+            <p>
+              My work focuses on turning complex and repetitive processes into more efficient, structured, and reliable
+              workflows. I enjoy analyzing business problems, working with data, and building practical solutions that
+              help teams work faster and make better decisions.
+            </p>
+            <p>
+              With a combination of business understanding and technical skills, I’m continuously exploring how data,
+              automation, and technology can be used to create simpler and more effective ways of working.
+            </p>
+          </div>
+
+          <!-- Guiding Principle (Refined Aesthetic 4-Step Process) -->
+          <div class="principle-container">
+            <div class="principle-header-row">
+              <div class="principle-label">
+                <span class="dot"></span>
+                <span>Guiding Principle</span>
+              </div>
+              <span class="principle-tagline">Execution Framework</span>
+            </div>
+
+            <div class="principle-grid">
+              <div class="pstep-card">
+                <div class="pstep-top">
+                  <span class="pstep-num">01</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                </div>
+                <div class="pstep-title">Understand Problem</div>
+                <p class="pstep-desc">Analyze retail business context and root bottlenecks.</p>
+              </div>
+
+              <div class="pstep-card">
+                <div class="pstep-top">
+                  <span class="pstep-num" style="color:var(--blue-bright);">02</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="9" y1="21" x2="9" y2="9" />
+                  </svg>
+                </div>
+                <div class="pstep-title">Structure Data</div>
+                <p class="pstep-desc">Normalize, clean, and model datasets for pipeline readiness.</p>
+              </div>
+
+              <div class="pstep-card">
+                <div class="pstep-top">
+                  <span class="pstep-num" style="color:#6ebbff;">03</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <div class="pstep-title">Automate Workflow</div>
+                <p class="pstep-desc">Engineer modular, zero-touch automated Python pipelines.</p>
+              </div>
+
+              <div class="pstep-card">
+                <div class="pstep-top">
+                  <span class="pstep-num" style="color:var(--state-success);">04</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="pstep-title">Measure Impact</div>
+                <p class="pstep-desc">Quantify speed gains, accuracy, and clear business ROI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Skills Matrix (Categorized with SVG Icons) -->
+        <div class="skills-column-wrap reveal-on-scroll">
+
+          <div class="skill-box-card">
+            <div class="skill-box-title">
+              <span class="dot"></span>
+              <h4>Data &amp; Automation</h4>
+            </div>
+            <div class="skill-chips-row">
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.9 2c-3.4 0-5.4 1.5-5.4 3.5v1.8h5.5v.8H3.8C2.2 8.1 1 9.7 1 12c0 2.2 1.3 3.9 3 3.9h1.7v-2.3c0-1.8 1.5-3.3 3.3-3.3h5.6c1.5 0 2.7-1.2 2.7-2.7V5.5c0-2-2-3.5-5.4-3.5zm-1.8 1.4c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm7.2 4.7H15.6v2.3c0 1.8-1.5 3.3-3.3 3.3H6.7c-1.5 0-2.7 1.2-2.7 2.7v2.1c0 2 2 3.5 5.4 3.5 3.4 0 5.4-1.5 5.4-3.5v-1.8H9.3v-.8h8.2c1.6 0 2.8-1.6 2.8-3.9 0-2.2-1.3-3.9-3-3.9zm-3.4 12.5c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" />
+                </svg>
+                <span>Python</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18" />
+                  <rect x="7" y="10" width="3" height="8" rx="1" />
+                  <rect x="12" y="6" width="3" height="12" rx="1" />
+                  <rect x="17" y="13" width="3" height="5" rx="1" />
+                </svg>
+                <span>pandas</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                </svg>
+                <span>openpyxl</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+                <span>xlsxwriter</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="6" cy="6" r="3" />
+                  <circle cx="6" cy="18" r="3" />
+                  <circle cx="18" cy="12" r="3" />
+                  <path d="M9 6h4a2 2 0 0 1 2 2v4M9 18h4a2 2 0 0 0 2-2v-4" />
+                </svg>
+                <span>Automated Data Pipelines</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19" />
+                </svg>
+                <span>ETL</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-box-title">
+              <span class="dot" style="background:var(--blue-bright);"></span>
+              <h4>Analytics &amp; Retail Metrics</h4>
+            </div>
+            <div class="skill-chips-row">
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+                <span>SPD / APC / STD Analysis</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="22" y1="12" x2="18" y2="12" />
+                  <line x1="6" y1="12" x2="2" y2="12" />
+                  <line x1="12" y1="6" x2="12" y2="2" />
+                  <line x1="12" y1="22" x2="12" y2="18" />
+                </svg>
+                <span>Competitive Analysis</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+                <span>Business Analysis</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                  <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                </svg>
+                <span>Target Allocation Modeling</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-box-title">
+              <span class="dot" style="background:var(--state-warning);"></span>
+              <h4>Excel &amp; Data Processing</h4>
+            </div>
+            <div class="skill-chips-row">
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                <span>Power Query</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                <span>PivotTable</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19l4-14h12M9 12h10" />
+                </svg>
+                <span>Advanced Formulas</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                </svg>
+                <span>Data Modeling</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18" />
+                  <path d="M18 9l-5 5-4-4-3 3" />
+                </svg>
+                <span>Dashboard</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-box-title">
+              <span class="dot" style="background:#a855f7;"></span>
+              <h4>Tools &amp; AI Environment</h4>
+            </div>
+            <div class="skill-chips-row">
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="M3 7l9 6 9-6" />
+                </svg>
+                <span>Outlook API</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M3 15h18M9 9v12" />
+                </svg>
+                <span>Google Sheets</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                  <path d="M43,49 A 28,28 0 1,0 47,43" stroke-width="12" stroke-linecap="round" />
+                  <line x1="41" y1="45" x2="35" y2="31" stroke-width="8" stroke-linecap="round" />
+                  <circle cx="35" cy="29" r="11" stroke-width="8" />
+                  <line x1="43" y1="21" x2="49" y2="15" stroke-width="7" stroke-linecap="round" />
+                  <circle cx="50" cy="14" r="7" stroke-width="6" opacity="0.65" />
+                </svg>
+                <span>Looker Studio</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 100 100" fill="currentColor">
+                  <!-- Center Primary Cross -->
+                  <rect x="45.5" y="32" width="9" height="36" rx="2" />
+                  <rect x="32" y="45.5" width="36" height="9" rx="2" />
+                  <!-- Cardinal Crosses -->
+                  <rect x="46.5" y="12" width="7" height="20" rx="1.5" opacity="0.85" />
+                  <rect x="40" y="18.5" width="20" height="7" rx="1.5" opacity="0.85" />
+                  <rect x="46.5" y="68" width="7" height="20" rx="1.5" opacity="0.85" />
+                  <rect x="40" y="74.5" width="20" height="7" rx="1.5" opacity="0.85" />
+                  <rect x="12" y="46.5" width="20" height="7" rx="1.5" opacity="0.85" />
+                  <rect x="18.5" y="40" width="7" height="20" rx="1.5" opacity="0.85" />
+                  <rect x="68" y="46.5" width="20" height="7" rx="1.5" opacity="0.85" />
+                  <rect x="74.5" y="40" width="7" height="20" rx="1.5" opacity="0.85" />
+                  <!-- Corner Crosses -->
+                  <rect x="26" y="20" width="7.5" height="24" rx="1.5" opacity="0.7" />
+                  <rect x="17.75" y="28.25" width="24" height="7.5" rx="1.5" opacity="0.7" />
+                  <rect x="66.5" y="20" width="7.5" height="24" rx="1.5" opacity="0.7" />
+                  <rect x="58.25" y="28.25" width="24" height="7.5" rx="1.5" opacity="0.7" />
+                  <rect x="26" y="56" width="7.5" height="24" rx="1.5" opacity="0.7" />
+                  <rect x="17.75" y="64.25" width="24" height="7.5" rx="1.5" opacity="0.7" />
+                  <rect x="66.5" y="56" width="7.5" height="24" rx="1.5" opacity="0.7" />
+                  <rect x="58.25" y="64.25" width="24" height="7.5" rx="1.5" opacity="0.7" />
+                </svg>
+                <span>Tableau</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                <span>VS Code</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3" />
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7M6 9v12" />
+                </svg>
+                <span>Git</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                <span>Antigravity</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+                <span>Claude AI</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C12 6.627 6.627 12 0 12c6.627 0 12 5.373 12 12 0-6.627 5.373-12 12-12-6.627 0-12-5.373-12-12z" />
+                </svg>
+                <span>Gemini AI</span>
+              </span>
+              <span class="tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    d="M12 3a9 9 0 0 1 7.8 4.5M21 12a9 9 0 0 1-4.5 7.8M12 21a9 9 0 0 1-7.8-4.5M3 12a9 9 0 0 1 4.5-7.8" />
+                </svg>
+                <span>ChatGPT AI</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROFESSIONAL EXPERIENCE & TIMELINE ================= -->
+  <section id="experience" class="pad-section">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Career &amp; Education</span>
+        </div>
+        <h2>Experience &amp; <span class="gradient-text">Qualifications</span></h2>
+      </div>
+
+      <div class="exp-feed-wrap reveal-on-scroll">
+
+        <!-- Continuous Spine Line Track -->
+        <div class="exp-spine-track">
+          <div class="exp-spine-glow-beam" id="expSpineBeam"></div>
+        </div>
+
+        <!-- Block 1: Experience (Indomaret Group) -->
+        <div class="exp-org-block">
+          <!-- Left Logo Column -->
+          <div class="exp-logo-col">
+            <div class="exp-org-logo" title="PT Indomarco Prismatama (Indomaret Group)">
+              <img src="assets/logo-indomaret.png" alt="PT Indomarco Prismatama Logo">
+            </div>
+          </div>
+
+          <!-- Right Content Column (Indented) -->
+          <div class="exp-content-col">
+            <div class="exp-org-header-info">
+              <div class="exp-location-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Menara Indomaret, Jakarta, Indonesia</span>
+              </div>
+              <h3 class="exp-org-name">PT Indomarco Prismatama (Indomaret Group)</h3>
+              <div class="exp-org-subtitle">Retail Merchandising &amp; Automated Analytics</div>
+              <div class="exp-pill-row">
+                <span class="exp-status-pill pill-work"><span class="pill-dot"></span> 💼 Work &amp; Automation</span>
+                <span class="exp-status-pill pill-fulltime"><span class="pill-dot"></span> Full-time</span>
+                <span class="exp-status-pill pill-active"><span class="pill-dot"></span> Active</span>
+              </div>
+              <div class="exp-date-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>Jun 2024 – Present (On-site)</span>
+              </div>
+            </div>
+
+            <div class="exp-overview-box">
+              Responsible for <span class="hl-blue">retail merchandising intelligence</span>, nationwide performance
+              reporting optimization, and engineering <span class="hl-cyan">automated data pipelines</span> for business
+              decision support.
+            </div>
+
+            <!-- Roles Timeline -->
+            <div class="exp-roles-timeline">
+              <!-- Role 1: MD Strategic Analyst -->
+              <div class="exp-role-item">
+                <div class="exp-node-ring"></div>
+                <div class="exp-role-content">
+                  <div class="exp-role-title">MD Strategic Analyst</div>
+                  <div class="exp-role-meta">
+                    <span class="meta-tag">Full-time</span> · <span>Jun 2024 - Present</span>
+                  </div>
+                  <div class="exp-role-location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Menara Indomaret, Jakarta, Indonesia</span>
+                  </div>
+                  <div class="exp-skills-text">
+                    <span class="skills-highlight">Skills:</span> <span class="hl-tech">Python</span>, <span
+                      class="hl-tech">pandas</span>, <span class="hl-tech">Tableau</span>, <span
+                      class="hl-tech">openpyxl</span>, <span class="hl-tech">ETL</span>, <span
+                      class="hl-tech">Looker Studio</span>, <span class="hl-tech">Automated Data Pipelines</span>, and 6+ other skills
+                  </div>
+
+                  <!-- Key Achievements -->
+                  <div class="exp-achieve-section">
+                    <div class="exp-achieve-heading">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                          d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H8v4h8v-4h-1c-.55 0-1-.45-1-1v-2.34M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                      </svg>
+                      <span>Key Achievements</span>
+                    </div>
+                    <ul class="exp-bullets">
+                      <li>Developed the <span class="hl-blue">Python reporting automation pipeline</span> for Sales
+                        Perishable reports, reducing daily manual processing time across 11 reports from <span
+                          class="hl-amber">165–220 minutes</span> to <span class="hl-green">~30 seconds (99.3%
+                          efficiency gain)</span>.</li>
+                      <li>Conducted comprehensive <span class="hl-blue">competitive analysis (O!Save vs.
+                          Indomaret)</span> spanning <span class="hl-cyan">75 stores</span> and <span class="hl-cyan">40
+                          product departments</span> using <span class="hl-blue">SPD, APC, and STD</span> evaluation
+                        models.</li>
+                      <li>Designed and implemented a <span class="hl-blue">multi-tier target allocation pipeline</span>
+                        integrating historical sales trends and carton packaging rounding rules.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role 2: Merchandising Support Staff -->
+              <div class="exp-role-item" style="margin-top: 28px;">
+                <div class="exp-node-ring"></div>
+                <div class="exp-role-content">
+                  <div class="exp-role-title">Merchandising Support Staff</div>
+                  <div class="exp-role-meta">
+                    <span class="meta-tag">Full-time</span> · <span>Oct 2022 - Jun 2024 · 1 yr 9 mos</span>
+                  </div>
+                  <div class="exp-role-location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Menara Indomaret, Jakarta, Indonesia</span>
+                  </div>
+                  <div class="exp-skills-text">
+                    <span class="skills-highlight">Skills:</span> <span class="hl-tech">Oracle</span>, <span
+                      class="hl-tech">Excel</span>, <span class="hl-tech">Outlook</span>
+                  </div>
+
+                  <!-- Key Responsibilities & Operations -->
+                  <div class="exp-achieve-section">
+                    <div class="exp-achieve-heading">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                          d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H8v4h8v-4h-1c-.55 0-1-.45-1-1v-2.34M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                      </svg>
+                      <span>Key Responsibilities &amp; Operations</span>
+                    </div>
+                    <ul class="exp-bullets">
+                      <li><span class="hl-blue">Product Data Management</span>: Managed the registration process for an
+                        average of <span class="hl-green">70 new products per month</span> into the system, ensuring
+                        complete data accuracy before nationwide distribution across retail stores.</li>
+                      <li><span class="hl-blue">Pricing Administration</span>: Handled regular input and updating of
+                        product selling prices, maintaining strict alignment with prevailing retail merchandising
+                        strategy.</li>
+                      <li><span class="hl-blue">Promotion Execution</span>: Managed technical setup and system
+                        parameters
+                        for promotional campaigns, ensuring effective and timely execution at the store level.</li>
+                      <li><span class="hl-blue">Product Classification &amp; Tagging</span>: Responsible for applying
+                        product labels (tags) to categorize sales performance, identifying <span
+                          class="hl-cyan">best-sellers (fast-moving)</span>, regular-selling items, and items slated for
+                        delisting.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visit Website CTA Button -->
+            <div class="exp-action-row">
+              <a href="https://www.indomaret.co.id/" target="_blank" rel="noopener" class="exp-visit-btn"
+                title="Visit Indomaret Official Website">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <span>Visit Website</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section Header: Education -->
+        <div class="exp-section-divider">
+          <div class="exp-divider-node">
+            <div class="exp-divider-icon-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" />
+              </svg>
+            </div>
+          </div>
+          <div class="exp-divider-content">
+            <span>Education</span>
+            <div class="exp-divider-line"></div>
+          </div>
+        </div>
+
+        <!-- Block 2: Education (UPH) -->
+        <div class="exp-org-block">
+          <div class="exp-logo-col">
+            <div class="exp-org-logo" title="Universitas Pelita Harapan (UPH)">
+              <img src="assets/logo-uph.png" alt="Universitas Pelita Harapan Logo">
+            </div>
+          </div>
+
+          <div class="exp-content-col">
+            <div class="exp-org-header-info">
+              <div class="exp-location-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Lippo Karawaci, Tangerang, Indonesia</span>
+              </div>
+              <h3 class="exp-org-name">Universitas Pelita Harapan (UPH)</h3>
+              <div class="exp-org-subtitle">Bachelor of Information Systems — <span class="hl-blue">Data Science and Data Analytics</span></div>
+              <div class="exp-pill-row">
+                <span class="exp-status-pill pill-edu"><span class="pill-dot"></span> 🎓 Education</span>
+                <span class="exp-status-pill pill-student"><span class="pill-dot"></span> Undergraduate</span>
+                <span class="exp-status-pill pill-active"><span class="pill-dot"></span> Active</span>
+              </div>
+              <div class="exp-date-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>2025 – 2029 (Expected) · Lippo Karawaci, Tangerang</span>
+              </div>
+            </div>
+
+            <div class="exp-overview-box">
+              Universitas Pelita Harapan (UPH) | <span class="hl-blue">Faculty of Artificial Intelligence and Data
+                Science</span>. Cumulative GPA: <span class="hl-green">3.78 / 4.00</span>. Focus: <span
+                class="hl-cyan">Enterprise Information Systems &amp; Data Innovation</span>. Direct alignment between
+              academic data engineering concepts and enterprise retail automation pipelines.
+            </div>
+
+            <!-- Visit Website CTA Button -->
+            <div class="exp-action-row">
+              <a href="https://www.uph.edu/id/" target="_blank" rel="noopener" class="exp-visit-btn"
+                title="Visit UPH Official Website">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <span>Visit Website</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section Header: Certification -->
+        <div class="exp-section-divider">
+          <div class="exp-divider-node">
+            <div class="exp-divider-icon-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M9 14l-2 7 5-3 5 3-2-7" />
+              </svg>
+            </div>
+          </div>
+          <div class="exp-divider-content">
+            <span>Technical Certification</span>
+            <div class="exp-divider-line"></div>
+          </div>
+        </div>
+
+        <!-- Block 3: Certification (Dicoding) -->
+        <div class="exp-org-block">
+          <div class="exp-logo-col">
+            <div class="exp-org-logo" title="Dicoding Indonesia">
+              <img src="assets/logo-dicoding.png" alt="Dicoding Indonesia Logo">
+            </div>
+          </div>
+
+          <div class="exp-content-col">
+            <div class="exp-org-header-info">
+              <div class="exp-location-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Online Credential Verification</span>
+              </div>
+              <h3 class="exp-org-name">Dicoding Indonesia</h3>
+              <div class="exp-org-subtitle">Verified Technical Path · Web Development Fundamentals</div>
+              <div class="exp-pill-row">
+                <span class="exp-status-pill pill-cert"><span class="pill-dot"></span> 🎖️ Certification</span>
+                <span class="exp-status-pill pill-verified"><span class="pill-dot"></span> Verified Credential</span>
+                <span class="exp-status-pill pill-active"><span class="pill-dot"></span> ID: N9ZONW8KYXG5</span>
+              </div>
+              <div class="exp-date-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>Issued 26 Juli 2026 · Verified Online Credential</span>
+              </div>
+            </div>
+
+            <div class="exp-overview-box">
+              Verified credentials in <span class="hl-blue">web development fundamentals</span>, including <span
+                class="hl-cyan">HTML</span>, <span class="hl-cyan">CSS</span>, <span class="hl-blue">responsive
+                design</span>, and <span class="hl-green">semantic web structure</span>.
+            </div>
+
+            <!-- Certificate Visual Showcase Card -->
+            <div class="cert-showcase-wrap">
+              <a href="https://www.dicoding.com/certificates/N9ZONW8KYXG5" target="_blank" rel="noopener"
+                class="cert-img-link" title="Click to view verified credential details">
+                <div class="cert-img-frame">
+                  <img src="assets/certificate-dicoding.png" alt="Dicoding Certificate — Willy Lengkong"
+                    class="cert-img-display">
+                  <div class="cert-hover-overlay">
+                    <div class="cert-hover-pill">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      <span>Verify Certificate on Dicoding.com</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Visit Website CTA Button -->
+            <div class="exp-action-row">
+              <a href="https://www.dicoding.com/" target="_blank" rel="noopener" class="exp-visit-btn"
+                title="Visit Dicoding Official Website">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <span>Visit Website</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Stats Strip (Dynamic Counter Easing) -->
+      <div class="stats-strip-wrapper reveal-on-scroll">
+        <div class="stat-cell-box">
+          <div class="stat-num-val highlight" data-counter-target="150" data-counter-suffix="×">0</div>
+          <div class="stat-label-text">Faster Reporting Workflow</div>
+        </div>
+        <div class="stat-cell-box">
+          <div class="stat-num-val" data-counter-target="99.3" data-counter-decimals="1" data-counter-suffix="%">0</div>
+          <div class="stat-label-text">Processing Time Saved</div>
+        </div>
+        <div class="stat-cell-box">
+          <div class="stat-num-val highlight" data-counter-target="11" data-counter-suffix="+">0</div>
+          <div class="stat-label-text">Daily Reports Automated</div>
+        </div>
+        <div class="stat-cell-box">
+          <div class="stat-num-val" data-counter-target="75" data-counter-suffix="">0</div>
+          <div class="stat-label-text">Retail Stores Analyzed</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & COMMUNICATION HUB ================= -->
+  <section id="contact" class="pad-section contact-section">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Get In Touch</span>
+        </div>
+        <h2>Let's <span class="gradient-text">Collaborate</span></h2>
+        <p>Have a data challenge, reporting need, or workflow that could work better? I'm open to strategic projects
+          where data, technology, and problem-solving come together let's talk.</p>
+      </div>
+
+      <div class="contact-split-grid reveal-on-scroll">
+
+        <!-- Contact Form -->
+        <div class="contact-card-box">
+          <form id="contactForm">
+            <input type="hidden" name="access_key" value="b0fa23ea-5372-422f-965c-298b5d78c659">
+            <input type="hidden" name="from_name" value="Portfolio Contact Form - Willy Lengkong">
+            <!-- Anti-spam Honeypot -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="form-two-col">
+              <div class="form-group-item">
+                <label for="cfName">Full Name</label>
+                <input type="text" id="cfName" name="name" class="form-field-input" placeholder="e.g. Alex Morgan"
+                  required>
+              </div>
+              <div class="form-group-item">
+                <label for="cfEmail">Your Email</label>
+                <input type="email" id="cfEmail" name="email" class="form-field-input" placeholder="alex@company.com"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-group-item">
+              <label for="cfSubject">Subject</label>
+              <input type="text" id="cfSubject" name="subject" class="form-field-input"
+                placeholder="e.g. Retail Data Automation Project">
+            </div>
+
+            <div class="form-group-item">
+              <label for="cfMessage">Message</label>
+              <textarea id="cfMessage" name="message" class="form-field-area" rows="5"
+                placeholder="Describe the business bottleneck, dataset, or timeline..." required></textarea>
+            </div>
+
+            <button type="submit" id="cfSubmitBtn" class="btn btn-primary" style="width:100%;">
+              <span>Send Message</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Channels & Direct Actions -->
+        <div class="contact-side-col">
+
+          <!-- Direct Email Card -->
+          <div class="channel-link-card">
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div class="channel-icon-pill email-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="3" />
+                  <path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div>
+                <div class="channel-tag-title">Direct Email</div>
+                <div class="channel-main-val">willylengkongg@gmail.com</div>
+              </div>
+            </div>
+            <button class="btn btn-secondary copy-email-btn" style="padding:5px 12px; font-size:12px;"
+              title="Copy to clipboard">
+              Copy
+            </button>
+          </div>
+
+          <!-- WhatsApp Direct Card -->
+          <a href="https://wa.me/6282281157451" target="_blank" rel="noopener" class="channel-link-card">
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div class="channel-icon-pill wa-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.07c-.24.68-1.2 1.25-1.78 1.32-.48.06-1.1.1-3.21-.77-2.7-1.12-4.44-3.87-4.57-4.05-.14-.18-1.09-1.45-1.09-2.76 0-1.31.69-1.96.93-2.22.24-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.4.06.61.57.24.57.81 1.98.88 2.12.07.14.12.3.02.48-.09.18-.14.3-.29.46-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.28.75 1.24 1.62 2.01 1.11.99 2.05 1.29 2.34 1.43.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.64-.15.26.1 1.66.78 1.94.92.29.14.48.22.55.34.07.13.07.74-.17 1.42z" />
+                </svg>
+              </div>
+              <div>
+                <div class="channel-tag-title">WhatsApp Direct</div>
+                <div class="channel-main-val">+62 822-8115-7451</div>
+              </div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <!-- Location Card -->
+          <div class="channel-link-card">
+            <div style="display:flex; align-items:center; gap:14px;">
+              <div class="channel-icon-pill loc-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z" />
+                  <circle cx="12" cy="9" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="channel-tag-title">Location</div>
+                <div class="channel-main-val">Jakarta, Indonesia</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Availability Status -->
+          <div class="avail-card-box">
+            <div class="avail-title-row">
+              <span class="dot"></span>
+              <span>Available for Strategic Projects</span>
+            </div>
+            <p>
+              I am open to opportunities in data analytics, business process improvement, and technology-driven
+              solutions. Feel free to connect!
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-top-row">
+
+        <div class="brand-wrapper">
+          <div class="brand-icon">
+            <img src="assets/brand-icon.png" alt="Willy Lengkong Brand Icon">
+          </div>
+          <div class="brand-name">Willy Lengkong</div>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="social-strip">
+          <a class="social-link-btn" href="https://linkedin.com/in/willylengkong" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3V8.98zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v6.33h-4v-5.62c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.72h-4V8.98z" />
+            </svg>
+          </a>
+          <a class="social-link-btn" href="https://github.com/willylengkong" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.65.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.19C22 6.58 17.52 2 12 2z" />
+            </svg>
+          </a>
+          <a class="social-link-btn" href="mailto:willylengkongg@gmail.com" aria-label="Email Willy Lengkong">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>© <span id="currentYear"></span> Willy Lengkong. Built with precision.</span>
+        <div class="footer-bottom-actions">
+          <button class="design-system-trigger-btn" id="openDesignSystemBtn" aria-label="Open Design System & Spec">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+              <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+              <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+              <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z" />
+            </svg>
+            <span>Design System &amp; Spec</span>
+          </button>
+          <a href="#home" class="back-top-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 15l-6-6-6 6" />
+            </svg>
+            Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= DESIGN SYSTEM & SPEC MODAL ================= -->
+  <div class="ds-modal-overlay" id="designSystemModal" role="dialog" aria-modal="true" aria-labelledby="dsModalTitle"
+    data-lenis-prevent>
+    <div class="ds-modal-container" data-lenis-prevent>
+      <div class="ds-modal-header">
+        <div class="ds-title-group">
+          <div class="badge" style="padding: 4px 12px; font-size: 11px;">
+            <span class="badge-dot"></span>
+            <span>Living Documentation</span>
+          </div>
+          <h3 id="dsModalTitle">🎨 Design System &amp; <span class="gradient-text">Architecture Spec</span></h3>
+          <p class="ds-subtitle">Visual tokens, typography hierarchy, and technical engineering specifications powering
+            this portfolio.</p>
+        </div>
+        <button class="ds-close-btn" id="closeDesignSystemBtn" aria-label="Close Design System Modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="ds-modal-body" data-lenis-prevent>
+        <!-- Module 1: Tech Stack Engine -->
+        <div class="ds-spec-card">
+          <div class="ds-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            <span>Core Technology Stack &amp; Architecture</span>
+          </div>
+          <div class="ds-stack-grid">
+            <div class="ds-stack-item">
+              <div class="ds-item-name">HTML5 Semantic</div>
+              <div class="ds-item-desc">Semantic document hierarchy, accessible ARIA landmark roles, OpenGraph &amp; Schema.org JSON-LD metadata.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Modern Vanilla CSS3</div>
+              <div class="ds-item-desc">Hardware-accelerated CSS custom tokens, glassmorphism filters, 3D lift spring physics, and responsive grid layouts.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Vanilla JavaScript (ES6+)</div>
+              <div class="ds-item-desc">Native browser execution, asynchronous fetch API, and zero external UI framework runtime overhead.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Three.js WebGL Engine</div>
+              <div class="ds-item-desc">GPU-accelerated dynamic 3D particle constellation canvas with cursor repulsion &amp; gravity physics.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">GSAP &amp; Lenis Smooth Scroll</div>
+              <div class="ds-item-desc">Physics-based inertial smooth momentum scrolling, synchronized preloader easing, and staggered scroll reveals.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Python Data Pipeline Architecture</div>
+              <div class="ds-item-desc">High-performance automated data reporting pipelines (pandas, openpyxl, Tableau, Looker Studio, Oracle).</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Web3Forms REST API</div>
+              <div class="ds-item-desc">Serverless asynchronous form submissions directly to email with honeypot spam protection.</div>
+            </div>
+            <div class="ds-stack-item">
+              <div class="ds-item-name">Vite 6 Rollup Pipeline</div>
+              <div class="ds-item-desc">Lightning-fast Hot Module Replacement (HMR) and optimized rollup production bundling (~260ms build).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: Color Palette Swatches -->
+        <div class="ds-spec-card">
+          <div class="ds-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2">
+              <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+              <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+              <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+              <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z" />
+            </svg>
+            <span>Color Palette Matrix <span class="ds-hint">(Click any swatch to copy HEX)</span></span>
+          </div>
+          <div class="ds-palette-grid">
+            <button class="ds-swatch-chip" data-copy-hex="#020816">
+              <span class="ds-swatch-box" style="background: #020816; border: 1px solid #16345E;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Deep Canvas</span>
+                <span class="ds-hex-code">#020816</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#07152C">
+              <span class="ds-swatch-box" style="background: #07152C; border: 1px solid #16345E;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Surface Default</span>
+                <span class="ds-hex-code">#07152C</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#0A1D3D">
+              <span class="ds-swatch-box" style="background: #0A1D3D; border: 1px solid #174E91;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Surface Raised</span>
+                <span class="ds-hex-code">#0A1D3D</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#1687FF">
+              <span class="ds-swatch-box" style="background: #1687FF; box-shadow: 0 0 8px #1687FF;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Primary Electric</span>
+                <span class="ds-hex-code">#1687FF</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#35A0FF">
+              <span class="ds-swatch-box" style="background: #35A0FF; box-shadow: 0 0 8px #35A0FF;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Bright Cyan Blue</span>
+                <span class="ds-hex-code">#35A0FF</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#32D58A">
+              <span class="ds-swatch-box" style="background: #32D58A; box-shadow: 0 0 8px #32D58A;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">State Success</span>
+                <span class="ds-hex-code">#32D58A</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#E9A827">
+              <span class="ds-swatch-box" style="background: #E9A827; box-shadow: 0 0 8px #E9A827;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">State Warning</span>
+                <span class="ds-hex-code">#E9A827</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#F4F7FF">
+              <span class="ds-swatch-box" style="background: #F4F7FF;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Text Primary</span>
+                <span class="ds-hex-code">#F4F7FF</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#B4BED1">
+              <span class="ds-swatch-box" style="background: #B4BED1;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Text Secondary</span>
+                <span class="ds-hex-code">#B4BED1</span>
+              </div>
+            </button>
+            <button class="ds-swatch-chip" data-copy-hex="#7C8BA6">
+              <span class="ds-swatch-box" style="background: #7C8BA6;"></span>
+              <div class="ds-swatch-info">
+                <span class="ds-color-name">Text Muted</span>
+                <span class="ds-hex-code">#7C8BA6</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Module 3: Typography System -->
+        <div class="ds-spec-card">
+          <div class="ds-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2">
+              <polyline points="4 7 4 4 20 4 20 7" />
+              <line x1="9" y1="20" x2="15" y2="20" />
+              <line x1="12" y1="4" x2="12" y2="20" />
+            </svg>
+            <span>Typography Hierarchy</span>
+          </div>
+          <div class="ds-typo-list">
+            <div class="ds-typo-item">
+              <div class="ds-typo-sample"
+                style="font-family: var(--font-geist); font-weight: 700; font-size: 16px; color: #fff;">
+                Geist Sans — Modern High-Tech Geometric Sans
+              </div>
+              <div class="ds-typo-meta">Usage: Headlines, Section Titles, Navigation Menu, KPI Counters · Weights: 500, 600, 700, 800</div>
+            </div>
+            <div class="ds-typo-item">
+              <div class="ds-typo-sample"
+                style="font-family: var(--font-signature); font-size: 26px; font-weight: 600; color: var(--blue-bright); line-height: 1.1;">
+                Willy Lengkong — Halimun / Signature Script
+              </div>
+              <div class="ds-typo-meta">Usage: Brand Logo, Loading Screen Identity, Iconic Cursive Accents · Style: Signature Cursive</div>
+            </div>
+            <div class="ds-typo-item">
+              <div class="ds-typo-sample"
+                style="font-family: var(--font-body); font-size: 14.5px; color: var(--text-secondary);">
+                Inter Tight — Precision High-Legibility Editorial
+              </div>
+              <div class="ds-typo-meta">Usage: Narrative paragraphs, overview boxes, bullet items, descriptions · Weights: 400, 500, 600</div>
+            </div>
+            <div class="ds-typo-item">
+              <div class="ds-typo-sample"
+                style="font-family: var(--font-mono); font-size: 13px; color: var(--blue-bright);">
+                JetBrains Mono — Monospace Data &amp; Token Font
+              </div>
+              <div class="ds-typo-meta">Usage: Location badges, date metadata, tech stack pills, code snippets · Weights: 400, 500, 600</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4: UI Primitives & Elevation -->
+        <div class="ds-spec-card">
+          <div class="ds-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+            <span>UI Primitives, Tokens &amp; Motion Physics</span>
+          </div>
+          <div class="ds-rules-grid">
+            <div class="ds-rule-box">
+              <div class="ds-rule-label">Border Radius Tokens</div>
+              <div class="ds-rule-val">Pill: <code>999px</code> · Card: <code>16px</code> · Squircle Logo: <code>20px / 18px / 14px</code> · Button: <code>8px</code></div>
+            </div>
+            <div class="ds-rule-box">
+              <div class="ds-rule-label">Motion Easing Physics</div>
+              <div class="ds-rule-val">Elastic Spring: <code>cubic-bezier(0.34, 1.56, 0.64, 1)</code> · Smooth Reveal: <code>cubic-bezier(0.16, 1, 0.3, 1)</code></div>
+            </div>
+            <div class="ds-rule-box">
+              <div class="ds-rule-label">Atmosphere Lighting</div>
+              <div class="ds-rule-val">48px Sub-pixel Grid + Inset Top Highlight <code>inset 0 1px 0 rgba(255,255,255,0.15)</code> + Dual Ambient Glows</div>
+            </div>
+            <div class="ds-rule-box">
+              <div class="ds-rule-label">Responsive Spectrum</div>
+              <div class="ds-rule-val">Monitor: <code>&gt;1440px</code> · Desktop: <code>1024px</code> · Tablet: <code>900px / 860px</code> · Mobile: <code>640px / 480px</code></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertical Status Rail (Right Edge) -->
+  <aside class="vertical-update-rail" aria-label="Website update status">
+    <span class="v-rail-dot"></span>
+    <span class="v-rail-text">LAST UPDATED · AUG 2026</span>
+    <span class="v-rail-bar"></span>
+  </aside>
+
+  <!-- Toast Notification Box -->
+  <div id="toast-box">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-bright)" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- CDN Motion & 3D Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script type="module" src="scripts/three-background.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+
+</body>
+
+</html>
